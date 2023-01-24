@@ -6,11 +6,11 @@ public final class PBungeeUtils extends Plugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
+        getProxy().getLogger().info("Plugin enabled!");
     }
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+        getProxy().getLogger().info("Plugin disabled!");
     }
 }
