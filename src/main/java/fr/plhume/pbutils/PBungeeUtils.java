@@ -2,6 +2,9 @@ package fr.plhume.pbutils;
 
 import net.md_5.bungee.api.plugin.Plugin;
 
+/**
+ * @author Plhume
+ */
 public final class PBungeeUtils extends Plugin {
 
     @Override
