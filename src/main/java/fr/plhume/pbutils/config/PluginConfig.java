@@ -11,6 +11,7 @@ import java.io.IOException;
 /**
  * @author Plhume
  */
+@SuppressWarnings("all")
 public class PluginConfig {
 
     private final PBungeeUtils plugin;
