@@ -22,4 +22,8 @@ public final class PBungeeUtils extends Plugin {
     public void onDisable() {
         getProxy().getLogger().info("Plugin disabled!");
     }
+
+    public PluginConfig getPluginConfig() {
+        return pConfig;
+    }
 }
