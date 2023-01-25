@@ -1,3 +1,4 @@
 name: PBungeeUtils
 version: '${project.version}'
+author: Plhume
 main: fr.plhume.pbutils.PBungeeUtils
