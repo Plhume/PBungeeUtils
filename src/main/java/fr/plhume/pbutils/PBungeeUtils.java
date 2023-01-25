@@ -1,5 +1,6 @@
 package fr.plhume.pbutils;
 
+import fr.plhume.pbutils.commands.BroadcastCommand;
 import fr.plhume.pbutils.config.PluginConfig;
 import net.md_5.bungee.api.plugin.Plugin;
 
@@ -14,6 +15,8 @@ public final class PBungeeUtils extends Plugin {
     public void onEnable() {
         this.pConfig = new PluginConfig(this);
         pConfig.createFile("config");
+
+        getProxy().getPluginManager().registerCommand(this, new BroadcastCommand());
     }
 
     @Override
