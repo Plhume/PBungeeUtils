@@ -1,6 +1,7 @@
 package fr.plhume.pbutils;
 
 import fr.plhume.pbutils.commands.BroadcastCommand;
+import fr.plhume.pbutils.commands.PlayerServerCommand;
 import fr.plhume.pbutils.config.PluginConfig;
 import net.md_5.bungee.api.plugin.Plugin;
 
@@ -17,6 +18,7 @@ public final class PBungeeUtils extends Plugin {
         pConfig.createFile("config");
 
         getProxy().getPluginManager().registerCommand(this, new BroadcastCommand());
+        getProxy().getPluginManager().registerCommand(this, new PlayerServerCommand());
     }
 
     @Override
