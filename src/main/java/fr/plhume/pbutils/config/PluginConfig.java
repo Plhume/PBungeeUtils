@@ -30,9 +30,8 @@ public class PluginConfig {
             try {
                 file.createNewFile();
 
-                if(fileName.equals("mysql")){
+                if(fileName.equals("config")){
                     Configuration config = getConfig(fileName);
-                    config.set("mysql.host", "localhost");
 
                     saveConfig(config, fileName);
                 }
